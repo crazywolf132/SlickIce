@@ -388,7 +388,15 @@
             </attributes>
         </page>
 
-        
+        <page name="Extend concrete5" path="/dashboard/extend" filename="/dashboard/extend/view.php" pagetype=""
+              description=""
+              package="">
+            <attributes>
+                <attributekey handle="meta_keywords">
+                    <value>add-on, addon, add on, package, app, ecommerce, discussions, forums, themes, templates, blocks</value>
+                </attributekey>
+            </attributes>
+        </page>
         <page name="Dashboard" path="/dashboard/news" filename="/dashboard/news.php" pagetype="" description=""
               package="">
             <attributes>

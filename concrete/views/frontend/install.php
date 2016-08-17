@@ -237,7 +237,7 @@ $(function() {
 
 		<?php if (!StartingPointPackage::hasCustomList()) {
     ?>
-			<div class="alert alert-info"><?=t('SlickIce pros can choose "Empty Site," but otherwise we recommend starting with some sample content.')?></div>
+			<div class="alert alert-info"><?=t('SlickIce pro\'s can choose "Empty Site," but otherwise we recommend starting with some sample content.')?></div>
 		<?php
 }
     ?>
@@ -618,7 +618,6 @@ $(function() {
     	<button class="btn btn-default btn-lg" type="submit"><?=t('Run Tests')?> <i class="fa fa-refresh"></i></button>
 	</form>
 </div>
-
 </div>
 </div>
 

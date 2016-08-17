@@ -243,6 +243,7 @@ if (isset($cp) && $cp->canViewToolbar() && (!$dh->inDashboard())) {
                                     <li class="last-li"><a href="<?= URL::to('/dashboard/reports') ?>"><?php echo t('Reports'); ?></a></li>
                                     <li class="last-li"><a href="<?= URL::to('/dashboard/pages') ?>"><?php echo t('Pages & Themes'); ?></a></li>
                                     <li class="last-li"><a href="<?= URL::to('/dashboard/blocks/stacks') ?>"><?php echo t('Stacks & Blocks'); ?></a></li>
+                                    <li class="last-li"><a href="<?= URL::to('/dashboard/extend') ?>"><?php echo t('Extend concrete5'); ?></a></li>
                                     <li class="last-li"><a href="<?= URL::to('/dashboard/system') ?>"><?php echo t('System & Settings'); ?></a></li>
                                 </ul>
                             </li>
@@ -257,7 +258,6 @@ if (isset($cp) && $cp->canViewToolbar() && (!$dh->inDashboard())) {
                 </div>
             </div>
             <ul class="ccm-toolbar-item-list">
-
                 <?php
                 if ($c->isMasterCollection()) {
                     ?>

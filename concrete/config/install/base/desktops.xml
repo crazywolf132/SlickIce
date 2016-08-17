@@ -64,7 +64,54 @@
                             </columns>
                         </arealayout>
                     </block>
-                    
+                    <block type="core_area_layout" name="">
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>desktop_newsflow_latest
+                                <column span="4" offset="0">
+                                    <block type="desktop_newsflow_latest" name="">
+                                        <data table="btDesktopNewsflowLatest">
+                                            <record>
+                                                <slot>A</slot>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="desktop_newsflow_latest" name="">
+                                        <data table="btDesktopNewsflowLatest">
+                                            <record>
+                                                <slot>B</slot>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <block type="desktop_newsflow_latest" name="">
+                                        <data table="btDesktopNewsflowLatest">
+                                            <record>
+                                                <slot>C</slot>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+                    <block type="rss_displayer" name="">
+                        <style>
+                            <customClass>concrete5-org-stories</customClass>
+                        </style>
+                        <data table="btRssDisplay">
+                            <record>
+                                <title>News from concrete5.org</title>
+                                <url>http://www.concrete5.org/rss/blog</url>
+                                <dateFormat>longDate</dateFormat>
+                                <itemsToDisplay>3</itemsToDisplay>
+                                <showSummary>1</showSummary>
+                                <launchInNewWindow>1</launchInNewWindow>
+                            </record>
+                        </data>
+                    </block>
                 </blocks>
             </area>
 

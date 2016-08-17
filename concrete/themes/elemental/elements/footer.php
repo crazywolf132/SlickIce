@@ -29,7 +29,7 @@ $displayFirstSection = $footerSiteTitleBlocks > 0 || $footerSocialBlocks > 0 || 
         </div>
     </div>
     </section>
-    <?php
+    <?php 
 } ?>
     <section>
     <div class="container">
@@ -61,7 +61,7 @@ $displayFirstSection = $footerSiteTitleBlocks > 0 || $footerSocialBlocks > 0 || 
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <span><?=t('Built with <a href="http://www.github.com/crazywolf132/SlickIce" class="SlickIce" rel="nofollow">SlickIce</a> CMS.')?></span>
+                <span><?=t('Built with <a href="http://www.concrete5.org" class="concrete5" rel="nofollow">concrete5</a> CMS.')?></span>
                 <span class="pull-right">
                     <?=Core::make('helper/navigation')->getLogInOutLink()?>
                 </span>

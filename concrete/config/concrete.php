@@ -7,8 +7,8 @@ return array(
      *
      * @var string
      */
-    'version' => '1.3.1',
-    'version_installed' => '1.3.1',
+    'version' => '1.3.0',
+    'version_installed' => '1.3.0',
     'version_db' => '20160725000000', // the key of the latest database migration
 
     /*
@@ -452,7 +452,7 @@ return array(
 
     /*
      * ------------------------------------------------------------------------
-     * Getting external news and help from SlickIce
+     * Getting external news and help from concrete5.org
      * ------------------------------------------------------------------------
      */
     'external' => array(
@@ -465,18 +465,18 @@ return array(
         'intelligent_search_help' => true,
 
         /*
-         * Display an overlay with up-to-date news from SlickIce
+         * Display an overlay with up-to-date news from concrete5
          *
          * @var bool concrete.external.news_overlay
          */
         'news_overlay' => false,
 
         /*
-         * Enable SlickIce news within your site
+         * Enable concrete5 news within your site
          *
          * @var bool concrete.external.news
          */
-        'news' => false,
+        'news' => true,
     ),
 
     /*

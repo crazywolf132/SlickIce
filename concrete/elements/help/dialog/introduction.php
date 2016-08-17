@@ -52,7 +52,38 @@ $ag->requireAsset('core/lightbox');
                     </div>
                 </div>
             </div>
-            
+            <div class="col-xs-4 col-accented">
+                <h2><?=t('More help.')?></h2>
+                <div class="spacer-row-4"></div>
+
+                <div class="ccm-dialog-help-item">
+                <ol class="ccm-dialog-help-item-icon-row">
+                    <li><i class="fa fa-cog"></i></li>
+                    <li><i class="fa fa-question-circle"></i></li>
+                    <li><i class="fa fa-file-text"></i></li>
+                </ol>
+                <p><?=t('Read the <a href="%s" target="_blank">User Documentation</a> to learn editing and site management with concrete5.',
+                    Config::get('concrete.urls.help.user'))?></p>
+                </div>
+                <div class="ccm-dialog-help-item">
+                <ol class="ccm-dialog-help-item-icon-row">
+                    <li><i class="fa fa-wrench"></i></li>
+                    <li><i class="fa fa-code"></i></li>
+                    <li><i class="fa fa-flash"></i></li>
+                </ol>
+                <p><?=t('The <a href="%s" target="_blank">Developer Documentation</a> covers theming, building add-ons and custom concrete5 development.',
+                    Config::get('concrete.urls.help.developer'))?></p>
+                </div>
+                <div class="ccm-dialog-help-item">
+                <ol class="ccm-dialog-help-item-icon-row">
+                    <li><i class="fa fa-smile-o"></i></li>
+                    <li><i class="fa fa-comment"></i></li>
+                    <li><i class="fa fa-external-link"></i></li>
+                </ol>
+                <p><?=t('Finally, <a href="%s" target="_blank">the forum</a> is full of helpful community members that make concrete5 so great.',
+                    Config::get('concrete.urls.help.forum'))?></p>
+                </div>
+            </div>
         </div>
     </div>
 </div>

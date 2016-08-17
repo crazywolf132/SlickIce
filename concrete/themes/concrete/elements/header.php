@@ -48,7 +48,6 @@ if (Config::get('concrete.user.profiles_enabled') && Core::isInstalled()) {
     ?>
 <div id="ccm-toolbar">
     <ul>
-        
         <?php if ($showAccount) {
     ?>
         <li class="pull-right">

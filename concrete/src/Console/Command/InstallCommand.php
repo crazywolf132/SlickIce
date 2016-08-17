@@ -19,12 +19,12 @@ class InstallCommand extends Command
     {
         $this
             ->setName('c5:install')
-            ->setDescription('Install concrete5')
+            ->setDescription('Install SlickIce')
             ->addOption('db-server', null, InputOption::VALUE_REQUIRED, 'Location of database server')
             ->addOption('db-username', null, InputOption::VALUE_REQUIRED, 'Database username')
             ->addOption('db-password', null, InputOption::VALUE_REQUIRED, 'Database password')
             ->addOption('db-database', null, InputOption::VALUE_REQUIRED, 'Database name')
-            ->addOption('site', null, InputOption::VALUE_REQUIRED, 'Name of the site', 'concrete5 Site')
+            ->addOption('site', null, InputOption::VALUE_REQUIRED, 'Name of the site', 'SlickIce Site')
             ->addOption('starting-point', null, InputOption::VALUE_REQUIRED, 'Starting point to use', 'elemental_blank')
             ->addOption('admin-email', null, InputOption::VALUE_REQUIRED, 'Email of the admin user of the install', 'admin@example.com')
             ->addOption('admin-password', null, InputOption::VALUE_REQUIRED, 'Password of the admin user of the install')
@@ -113,13 +113,13 @@ EOT
             $fileWriteErrors = clone $cnt->fileWriteErrors;
             $e = Core::make('helper/validation/error');
             if (!$cnt->get('imageTest')) {
-                $e->add('GD library must be enabled to install concrete5.');
+                $e->add('GD library must be enabled to install SlickIce.');
             }
             if (!$cnt->get('mysqlTest')) {
                 $e->add($cnt->getDBErrorMsg());
             }
             if (!$cnt->get('xmlTest')) {
-                $e->add('SimpleXML and DOM must be enabled to install concrete5.');
+                $e->add('SimpleXML and DOM must be enabled to install SlickIce.');
             }
             if (!$cnt->get('phpVtest')) {
                 $e->add('concrete5 requires PHP '.$cnt->getMinimumPhpVersion().' or greater.');

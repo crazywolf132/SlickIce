@@ -390,6 +390,17 @@ defined('C5_EXECUTE') or die("Access Denied.");
             <?php
         } ?>
 
+        <?php
+        $p = new \Permissions();
+        if (Config::get('concrete.marketplace.enabled') && $p->canInstallPackages()) {
+            ?>
+            <div class="ccm-marketplace-btn-wrapper">
+                <button type="button" onclick="window.location.href='<?= URL::to('/dashboard/extend/addons') ?>'"
+                        class="btn-info btn-block btn btn-large"><?= t("Get More Blocks") ?></button>
+            </div>
+            <?php
+        } ?>
+
     </div>
 
 </section>
